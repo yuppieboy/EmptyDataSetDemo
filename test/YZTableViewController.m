@@ -44,10 +44,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:self.identify forIndexPath:indexPath];
-    if (cell==nil) {
-        cell=[tableView dequeueReusableCellWithIdentifier:self.identify];
-    }
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:self.identify];
     return cell;
 }
 

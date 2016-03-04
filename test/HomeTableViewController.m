@@ -24,7 +24,7 @@
 -(void)modelchange
 {
     [self setLoading:NO];
-    self.numberInSection=1;
+    self.numberInSection=0;
     [self.tableView reloadData];
 }
 
@@ -36,10 +36,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HomeTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:self.identify forIndexPath:indexPath];
-    if (cell==nil) {
-        cell=[tableView dequeueReusableCellWithIdentifier:self.identify];
-    }
+    HomeTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:self.identify];
 
     return cell;
 }
